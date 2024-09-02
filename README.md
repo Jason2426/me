@@ -1,2 +1,2 @@
-# Course journal
+# FDND Journal
 Learning journal, blog, digital gardening
