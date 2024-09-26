@@ -1,0 +1,9 @@
+<script>
+
+</script>
+
+<div class="loading">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
