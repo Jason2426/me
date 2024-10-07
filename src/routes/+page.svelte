@@ -36,7 +36,7 @@
       display: flex;
       flex-direction: column;
       text-align: center;
-      margin: 0% 10% 10% 10%;
+      margin: 0% 10% 3em 10%;
       gap: .8em;
   }
 
@@ -66,4 +66,27 @@
     font-weight: 600;
     color: #FFFFFF;
   }
+
+  /* #region Media queries */ 
+
+  @media(min-width: 892px){
+      .intro-section {
+        margin: 0% 25% 3em 25%;
+    }
+  }
+
+  @media(min-width: 1048px){
+    h1 {
+      font-size: var(--heading-lg);
+    }
+  }
+
+  @media(min-width: 1280px){
+    .intro-section {
+        margin: 0% 30% 3em 30%;
+    }
+  }
+
+
+  /* #endregion */ 
 </style>
