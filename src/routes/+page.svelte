@@ -23,21 +23,20 @@
     </button>
   </section>
   <Modal bind:showModal>
-         <!-- Passing videos into the slots -->
-    <video slot="video-1" width="300" controls>
-      <source src="Jackboys-test.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
-  
-  <video slot="video-2" width="300" controls>
-      <source src="Jackboys-test.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
-  
-  <video slot="video-3" width="300" controls>
-      <source src="Jackboys-test.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
+      <video slot="video-1" width="250" controls>
+        <source src="Jackboys-test.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <video slot="video-2" width="250" controls>
+        <source src="Jackboys-test.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <video slot="video-3" width="250" controls>
+        <source src="Jackboys-test.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
   </Modal>
 </main>
 
@@ -85,7 +84,6 @@
     font-weight: 600;
     color: #FFFFFF;
   }
-
   /* #region Media queries */ 
 
   @media(min-width: 892px){

@@ -1,5 +1,6 @@
 <script>
 
+    export let clazz;
     export let showModal;
     let dialog;
 
@@ -21,10 +22,11 @@
             <button></button>
             <button></button>
         </section>
-		<slot name="video-1">
-        </slot>
-        <slot name="video-2" />
-        <slot name="video-3" />
+        <section class="video-layout">
+            <slot name="video-1" class={clazz} />
+            <slot name="video-2" class={clazz} />
+            <slot name="video-3" class={clazz} />
+        </section>
 	</div>
 </dialog>
 
@@ -68,11 +70,22 @@
     .controls-section {
         display: flex;
         gap: .7em;
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .video-layout{
+        display: flex;
+        flex-direction: column;
+        gap: 1em 0;
+        justify-content: center;
+    }
+
+    .video-style {
+        border-radius: 1em;
     }
 
     button {
-        padding: 1em;
+        padding: .8em;
         border: none;
         background-color: rgb(252, 23, 23);
         border-radius: 50%;
