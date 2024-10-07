@@ -5,10 +5,10 @@
 
 <main>
   <section class="intro-section">
-    <h1>School Projects</h1>
-    <p>
-      Welcome to my page about me, you can have a look @ the projects i've made and besides that it is a sort of play/testground for applying new techniques i've learned by myself throughout this education. 
-    </p>
+      <h1>School Projects</h1>
+      <p>
+        Welcome to my page about me, you can have a look @ the projects i've made and besides that it is a sort of play/testground for applying new techniques i've learned by myself throughout this education. 
+      </p>
   </section>
   <section class="map-section">
     <button>
@@ -24,14 +24,20 @@
 
 <style>
 
+  main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .intro-section {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
       text-align: center;
+      margin: 0% 10% 10% 10%;
       gap: .8em;
-      margin: 30% 10% 20% 10%;    
   }
 
   .map-section{
@@ -48,6 +54,11 @@
     flex-direction: column;
     align-items: center;
     gap: 1em;
+  }
+
+  button:hover {
+    background-color: rgba(68, 66, 66, 0.222);
+    border-radius: 1em;
   }
 
   span {
