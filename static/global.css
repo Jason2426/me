@@ -24,14 +24,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
-    background-color: #0F0F0F;
-    font-family: 'Arial', sans-serif;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: 'Inter', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -48,32 +43,27 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@font-face {
+  font-family: Jacquard-24;
+  src: url(fonts/Jacquard24-Regular.ttf);
+}
   
-  .loading span {
-    display: inline-block;
-    vertical-align: middle;
-    width: 1em;
-    height: 1em;
-    margin: .19em;
-    background: #08b1ff;
-    border-radius: 1em;
-    animation: loading 1s infinite alternate;
-  }
-  
-  .loading span:nth-of-type(2) {
-    background: #04c3f3;
-    animation-delay: 0.2s;
-  }
-  .loading span:nth-of-type(3) {
-    background: #06cbce;
-    animation-delay: 0.4s;
-  }
-  
-  @keyframes loading {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+:root {
+  --main-bg-color: #0F0F0F;
+  --main-text-color: #676666; 
+  --jacquard-24: "Jacquard-24", system-ui;
+
+  --heading-sm: 3.5em;
+  --heading-md: 4em;
+  --heading-lg: 5em;
+}
+
+h1 {
+  font-family: var(--jacquard-24);
+  font-size: var(--heading-sm);
+}
+
+p {
+  line-height: 1.55;
+}
