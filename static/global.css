@@ -51,7 +51,9 @@ table {
   
 :root {
   --main-bg-color: #0F0F0F;
+  --secondary-bg-color: #171919;
   --main-text-color: #676666; 
+
 
   --jacquard-24: "Jacquard-24", system-ui;
 
