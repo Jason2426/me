@@ -12,8 +12,6 @@
   </section>
 </main>
 
-
-
 <style>
 
   .intro-section {
