@@ -52,11 +52,19 @@ table {
 :root {
   --main-bg-color: #0F0F0F;
   --main-text-color: #676666; 
+
   --jacquard-24: "Jacquard-24", system-ui;
 
   --heading-sm: 3.5em;
   --heading-md: 4em;
   --heading-lg: 5em;
+
+  --spacing-xs: .25em;
+  --spacing-sm: .5em;
+  --spacing-md: 1em;
+  --spacing-lg: 1.5em;
+  --spacing-xl: 2em;
+  
 }
 
 h1 {
