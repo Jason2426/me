@@ -1,5 +1,7 @@
 <script>
-    
+    import Modal from "$lib/Modal.svelte";
+
+    let showModal = false;
 </script>
 
 
@@ -11,7 +13,7 @@
       </p>
   </section>
   <section class="map-section">
-    <button>
+    <button on:click={() => (showModal = true)}>
       <svg width="115" height="89" viewBox="0 0 95 69" fill="none">
         <path d="M36 6H90C92.7614 6 95 8.23858 95 11V18H36V6Z" fill="#373535"/>
         <path d="M0 5C0 2.23858 2.23858 0 5 0H25C36.0457 0 45 8.95431 45 20V20H0V5Z" fill="#373535"/>
@@ -20,6 +22,23 @@
       <span>Projects</span>
     </button>
   </section>
+  <Modal bind:showModal>
+         <!-- Passing videos into the slots -->
+    <video slot="video-1" width="300" controls>
+      <source src="Jackboys-test.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  
+  <video slot="video-2" width="300" controls>
+      <source src="Jackboys-test.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  
+  <video slot="video-3" width="300" controls>
+      <source src="Jackboys-test.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  </Modal>
 </main>
 
 <style>
