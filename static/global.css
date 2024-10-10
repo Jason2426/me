@@ -45,21 +45,40 @@ table {
 }
 
 @font-face {
-  font-family: Jacquard-24;
-  src: url(fonts/Jacquard24-Regular.ttf);
+  font-family: Arvo;
+  src: url(fonts/Arvo/Arvo-Regular.ttf);
 }
+
+@font-face {
+  font-family: Arvo-bold;
+  src: url(fonts/Arvo/Arvo-Bold.ttf);
+}
+
+@font-face {
+  font-family: Arvo-italic;
+  src: url(fonts/Arvo/Arvo-Italic.ttf);
+}
+
+@font-face {
+  font-family: Arvo-italic-bold;
+  src: url(fonts/Arvo/Arvo-BoldItalic.ttf);
+}
+
   
 :root {
   --main-bg-color: #0F0F0F;
   --secondary-bg-color: #171919;
   --main-text-color: #676666; 
 
+  --arvo-regular: "Arvo", system-ui;
+  --arvo-bold: "Arvo-bold", system-ui;
+  --arvo-italic: "Arvo-italic", system-ui;
+  --arvo-italic-bold: "Arvo-italic-bold", system-ui;
 
-  --jacquard-24: "Jacquard-24", system-ui;
-
-  --heading-sm: 3.5em;
+  --heading-sm: 3.4em;
   --heading-md: 4em;
   --heading-lg: 5em;
+  --heading-2xl: 11.4em;
 
   --spacing-xs: .25em;
   --spacing-sm: .5em;
@@ -70,7 +89,7 @@ table {
 }
 
 h1 {
-  font-family: var(--jacquard-24);
+  font-family: var(--arvo-bold);
   font-size: var(--heading-sm);
 }
 
