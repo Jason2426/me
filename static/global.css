@@ -25,8 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-  font-family: 'Inter', sans-serif;
+  color: #FFFFFF;
 }
 ol, ul {
 	list-style: none;
@@ -75,7 +74,7 @@ table {
   --arvo-italic: "Arvo-italic", system-ui;
   --arvo-italic-bold: "Arvo-italic-bold", system-ui;
 
-  --heading-sm: 3.4em;
+  --heading-sm: 3.4rem;
   --heading-md: 4em;
   --heading-lg: 5em;
   --heading-2xl: 11.4em;
@@ -88,11 +87,19 @@ table {
   
 }
 
-h1 {
+body {
+  font-family: var(--arvo-regular);
+}
+
+h1, span {
   font-family: var(--arvo-bold);
-  font-size: var(--heading-sm);
+}
+
+h2 {
+  font-size: 1.5em;
 }
 
 p {
+  font-size: 1.5em;
   line-height: 1.55;
 }
