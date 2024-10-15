@@ -6,10 +6,12 @@
 <main>
     <section class="intro-section">
         <header>
-            <h1>
+            <span class="bengals">
                 I LOVE
-            </h1>
-            <span> WEB? </span>
+            </span>
+            <span class="bengals2">
+                WEB?
+            </span>
         </header>
         <!-- <div class="meta-info">
             <h2>
@@ -38,6 +40,7 @@
 </main>
 
 <style>
+
     .intro-section {
         display: flex;
         flex-direction: column;
@@ -48,14 +51,53 @@
         gap: 1em;
     }
 
-    h1, span {
+    span {
         display: flex;
         text-wrap: nowrap;
         font-size: 15vw;
     }
 
-    /* strong {
-        color: #FFC300;
-    } */
- 
+    span.bengals {
+        color: transparent;
+        text-shadow:
+        0 0 0 #FFFFFF,
+        0 1.5em 0 #FFFFFF,
+        0 3em 0 #FFFFFF,
+        0 4.5em 0 #FFFFFF,
+        0 6em 0 #FFFFFF;
+        overflow: hidden;
+        animation: animateTextShadow 1.5s ease forwards;
+    }
+
+    span.bengals2 {
+        transform: rotate(0.5turn);
+        color: transparent;
+        text-shadow:
+        0 6em 0 #FFFFFF,
+        0 4.5em 0 #FFFFFF,
+        0 3em 0 #FFFFFF,
+        0 1.5em #FFFFFF,
+        0 0 0 #FFFFFF;
+        overflow: hidden;
+        animation: animateTextShadow 1.5s ease forwards;
+    }
+        @keyframes animateTextShadow {
+        0% {
+            text-shadow:
+            0 6em 0 #FFFFFF,
+            0 4.5em 0 #FFFFFF,
+            0 3em 0 #FFFFFF,
+            0 1.5em 0 #FFFFFF,
+            0 0 0 #FFFFFF;
+        }
+        100% {
+            text-shadow:
+            0 0 0 #FFFFFF,
+            0 -1.5em 0 #FFFFFF,
+            0 -3em 0 #FFFFFF,
+            0 -4.5em 0 #FFFFFF,
+            0 -6em 0 #FFFFFF;
+        }
+    }
+
 </style>
