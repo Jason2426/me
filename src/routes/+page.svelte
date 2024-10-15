@@ -58,14 +58,20 @@
     }
 
     span.bengals {
+        /* de tekst zelf is doorzichtig */
         color: transparent;
+        /* 5 shadows - steeds 1.5em lager */
         text-shadow:
         0 0 0 #FFFFFF,
         0 1.5em 0 #FFFFFF,
         0 3em 0 #FFFFFF,
         0 4.5em 0 #FFFFFF,
         0 6em 0 #FFFFFF;
+        /* de shadows die uitsteken zijn niet te zien */
         overflow: hidden;
+        /* de transitie voor de terugweg */
+	    /* de text-shadows doen er .75s over */
+	    /* de box-shadow is direct weer weg */
         animation: animateTextShadow 1.5s ease forwards;
     }
 
@@ -83,6 +89,7 @@
     }
         @keyframes animateTextShadow {
         0% {
+            /* de shadows bewegen allemaal naar boven */
             text-shadow:
             0 6em 0 #FFFFFF,
             0 4.5em 0 #FFFFFF,
@@ -92,7 +99,7 @@
         }
         100% {
             text-shadow:
-            0 0 0 #FFFFFF,
+            0 0 0 #FFFFFF, /* Eindpunt */
             0 -1.5em 0 #FFFFFF,
             0 -3em 0 #FFFFFF,
             0 -4.5em 0 #FFFFFF,
