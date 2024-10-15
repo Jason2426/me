@@ -9,7 +9,7 @@
             <span class="bengals">
                 I LOVE
             </span>
-            <span class="bengals2">
+            <span class="bengals bengals2">
                 WEB?
             </span>
         </header>
@@ -71,21 +71,10 @@
         overflow: hidden;
         /* de transitie voor de terugweg */
 	    /* de text-shadows doen er .75s over */
-	    /* de box-shadow is direct weer weg */
         animation: animateTextShadow 1.5s ease forwards;
     }
-
     span.bengals2 {
         transform: rotate(0.5turn);
-        color: transparent;
-        text-shadow:
-        0 6em 0 #FFFFFF,
-        0 4.5em 0 #FFFFFF,
-        0 3em 0 #FFFFFF,
-        0 1.5em #FFFFFF,
-        0 0 0 #FFFFFF;
-        overflow: hidden;
-        animation: animateTextShadow 1.5s ease forwards;
     }
         @keyframes animateTextShadow {
         0% {
