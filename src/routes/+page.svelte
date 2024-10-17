@@ -35,24 +35,30 @@
             </h4>
 
             <h4>
-                <span><data id="clock" value="time">Local Time : {time}</data></span>
+                <span>
+                    <data id="clock" value="time">Local Time : {time}</data>
+                </span>
             </h4>
         </div>
-        <div class="images-of-me">
-            <div class="pic-1">
-                <img src="" alt="">
+        <section class="container-section">
+            <div class="images-of-me">
+                <div class="picture-1">
+                    <img src="./drake.jpg" alt="Small liliputter">
+                </div>
+                <div class="picture-2">
+                    <img src="./drake.jpg" alt="">
+                </div>
             </div>
-            <div class="pic-2">
-                <img src="" alt="">
+            <hr />
+            <div class="description">
+                <p>
+                    Currently diving into front-end development to broaden my skills. I’m passionate about design, inspired by creative developers, aspiring to become one myself one day.
+                </p>
             </div>
-        </div>
-        <hr hidden>
-        <div class="description">
-            <p>
-                Currently diving into front-end development to broaden my skills. I’m passionate about design, inspired by creative developers, aspiring to become one myself one day.
-            </p>
-        </div>
+       </section>
     </section>
+    
+
 
     <section class="my-work">
         <h2>Have a look at my work</h2>
@@ -71,7 +77,11 @@
 </main>
 
 <style>
-
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
     .intro-section {
         display: flex;
         flex-direction: column;
@@ -80,11 +90,12 @@
     header {
         display: flex;
         gap: 1em;
+        margin-bottom: .5em;
     }
 
     header span {
         display: flex;
-        text-wrap: nowrap;
+        white-space: nowrap;
         font-size: 14.75vw;
     }
 
@@ -112,14 +123,89 @@
         transform: rotate(0.5turn);
     }
 
-    
+    .meta-info {
+        margin-bottom: 5em;
+    }
+
+    .container-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images-of-me {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+        height: 45vh;
+        width: 26em;
+    }
+
+    .images-of-me img {
+        max-width: 12em;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: .5em;
+    }
+
+    .picture-1 {
+        grid-area: 1 / 2 / 9 / 6;
+    }
+
+    .picture-2 {
+        grid-area: 5 / 5 / 13 / 9;
+    }
+
+    hr {
+        width: 100%;
+        margin: 5em 0 2em 0;
+        border: none; /* Remove default border */
+        border-top: 2px solid #2E2C2C; /* Add a blue top border */
+    }
 
     .description {
-        display: none;
+        margin: 2em;
     }
 
     .my-work {
         display: none;
+    }
+
+    @media (min-width: 545px){
+        .meta-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 1em .5em 7.5em .5em;
+        }
+        h4 data {
+            display: block;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .meta-info {
+            margin: 0em 3em 5em 3em;
+        }
+        h4 data {
+            display: block;
+        }
+
+        hr {
+            display: none;
+        }
+        .container-section {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .description {
+            width: 55%;
+            margin: 0 2.5em 0 0;
+            align-self: flex-end;
+        }
     }
 
 </style>

@@ -116,7 +116,11 @@ strong {
   color: #FFC300;
 }
 
-
+@media (min-width: 992px) {
+p {
+  font-size: 1.75em;
+}
+}
 
 /* #region Keyframe animations */
 
