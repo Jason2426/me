@@ -145,11 +145,22 @@ p {
   }
   @keyframes reveal {
     0% {
-        transform: translate(0,200%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: .75;
     }
     100% {
-        transform: translate(0,0);
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
+}
 
 /* #endregion */

@@ -99,8 +99,11 @@
         font-size: 14.75vw;
     }
 
-    h4 data {
-        display: none;
+    h4 span {
+        opacity: 0;
+        display: block;
+        transform: translateY(100%);
+        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
     }
 
     span.bengals {
@@ -127,6 +130,10 @@
         margin-bottom: 5em;
     }
 
+    h4 data {
+        display: none;
+    }
+
     .container-section {
         display: flex;
         flex-direction: column;
@@ -148,6 +155,9 @@
         height: auto;
         object-fit: cover;
         border-radius: .5em;
+
+        opacity: 0;
+        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
     }
 
     .picture-1 {
@@ -166,7 +176,9 @@
     }
 
     .description {
+        opacity: 0;
         margin: 2em;
+        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
     }
 
     .my-work {
