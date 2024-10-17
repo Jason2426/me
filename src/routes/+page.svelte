@@ -43,10 +43,10 @@
         <section class="container-section">
             <div class="images-of-me">
                 <div class="picture-1">
-                    <img src="./drake.jpg" alt="Small liliputter">
+                    <img src="./young_me.jpeg" alt="Small liliputter">
                 </div>
                 <div class="picture-2">
-                    <img src="./drake.jpg" alt="">
+                    <img src="./jsn.jpeg" alt="">
                 </div>
             </div>
             <hr />
@@ -152,7 +152,7 @@
     .images-of-me img {
         max-width: 12em;
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
         border-radius: .5em;
 
