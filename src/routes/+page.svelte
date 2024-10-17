@@ -46,7 +46,7 @@
                 <img src="" alt="">
             </div>
         </div>
-        <hr>
+        <hr hidden>
         <div class="description">
             <p>
                 Currently diving into front-end development to broaden my skills. I’m passionate about design, inspired by creative developers, aspiring to become one myself one day.
@@ -56,17 +56,18 @@
 
     <section class="my-work">
         <h2>Have a look at my work</h2>
-        <p>Still working on amazing projects, that will be added to this website a.s.a.p. Scroll down to see my holiday trip collection just because I love to travel :)</p>
-        <hr>
+        <article>
+            <h4>
+                TouchTribe
+            </h4>
+            <span>
+                Design & Front-End
+            </span>
+            <svg><!--Arrow Btn--></svg>
+            <img src="" alt="">
+        </article>
     </section>
 
-    <section class="my-trips">
-        <!--Foreach through an array for title and img url-->
-        <h3>Hong Kong</h3>
-        <p>Photo collection</p>
-        <hr>
-        <img src="" alt="">
-    </section>
 </main>
 
 <style>
@@ -91,7 +92,6 @@
         display: none;
     }
 
-
     span.bengals {
         /* de tekst zelf is doorzichtig */
         color: transparent;
@@ -110,6 +110,16 @@
     }
     span.bengals2 {
         transform: rotate(0.5turn);
+    }
+
+    
+
+    .description {
+        display: none;
+    }
+
+    .my-work {
+        display: none;
     }
 
 </style>
