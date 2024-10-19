@@ -152,10 +152,8 @@
     .images-of-me img {
         max-width: 12em;
         width: 100%;
-        height: 100%;
         object-fit: cover;
         border-radius: .5em;
-
         opacity: 0;
         animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
     }
@@ -178,7 +176,7 @@
     .description {
         opacity: 0;
         margin: 2em;
-        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
+        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.85s forwards;
     }
 
     .my-work {
