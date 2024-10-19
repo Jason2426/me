@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   background-color: var(--main-bg-color);
   color: #FFFFFF;
+  font-family: var(--arvo-regular);
 }
 ol, ul {
 	list-style: none;
@@ -85,10 +86,6 @@ table {
   --spacing-lg: 1.5em;
   --spacing-xl: 2em;
   
-}
-
-body {
-  font-family: var(--arvo-regular);
 }
 
 h1, span {
