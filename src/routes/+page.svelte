@@ -1,22 +1,15 @@
 <script>
-    import { onMount } from 'svelte';
+    import { time } from "$lib/stores.js";
 
-    let time = '';
-    const updateTime = () => {
-        const now = new Date();
-        time = now.toLocaleTimeString(undefined, {
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit',
-            hour12: false
-        });
-    };
-
-    onMount(() => {
-        updateTime();
-        const interval = setInterval(updateTime, 1000);
-        return () => clearInterval(interval);
-    });
+    const formatter = new Intl.DateTimeFormat(
+        "en",
+        {
+            hour12 : true,
+            hour: "numeric",
+            minute: "2-digit",
+            second: "2-digit"
+        }
+    );
 </script>
 
 <main>
@@ -36,7 +29,7 @@
 
             <h4>
                 <span>
-                    <data id="clock" value="time">Local Time : {time}</data>
+                    <data id="clock" value="time">Local Time : {formatter.format($time)}</data>
                 </span>
             </h4>
         </div>
