@@ -74,7 +74,9 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        transition: .20s;
     }
+
     .intro-section {
         display: flex;
         flex-direction: column;
@@ -96,7 +98,7 @@
         opacity: 0;
         display: block;
         transform: translateY(100%);
-        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
+        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.3s forwards;
     }
 
     span.bengals {
@@ -138,17 +140,17 @@
         align-content: center;
         grid-template-columns: repeat(9, 1fr);
         grid-template-rows: repeat(13, 1fr);
-        height: 45vh;
-        width: 26em;
+
     }
 
     .images-of-me img {
         max-width: 12em;
+        height: 100%;
         width: 100%;
         object-fit: cover;
         border-radius: .5em;
         opacity: 0;
-        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
+        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.3s forwards;
     }
 
     .picture-1 {
@@ -169,7 +171,7 @@
     .description {
         opacity: 0;
         margin: 2em;
-        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.85s forwards;
+        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.75s forwards;
     }
 
     .my-work {
@@ -191,6 +193,9 @@
     @media (min-width: 992px) {
         .meta-info {
             margin: 0em 3em 5em 3em;
+        }
+        header {
+            margin: 0 .5em;
         }
         h4 data {
             display: block;
