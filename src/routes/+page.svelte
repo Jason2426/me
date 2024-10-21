@@ -74,7 +74,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        transition: .20s;
+        transition: .20ns;
     }
 
     .intro-section {
@@ -163,9 +163,11 @@
 
     hr {
         width: 100%;
-        margin: 5em 0 2em 0;
+        margin: 5em 0 2em 1;
         border: none; /* Remove default border */
         border-top: 2px solid #2E2C2C; /* Add a blue top border */
+        animation: line-reveal 2s ease 2.25s forwards;
+        opacity: 0;
     }
 
     .description {
