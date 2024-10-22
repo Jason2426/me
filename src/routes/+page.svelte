@@ -98,7 +98,7 @@
         opacity: 0;
         display: block;
         transform: translateY(100%);
-        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.3s forwards;
+        animation: reveal 1.8s cubic-bezier(0.77, 0, 0.175, 1) 0.3s forwards;
     }
 
     span.bengals {
@@ -150,7 +150,7 @@
         object-fit: cover;
         border-radius: .5em;
         opacity: 0;
-        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.3s forwards;
+        animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.3s forwards;
     }
 
     .picture-1 {
@@ -173,7 +173,7 @@
     .description {
         opacity: 0;
         margin: 2em;
-        animation: reveal 2.25s cubic-bezier(0.77, 0, 0.175, 1) 0.75s forwards;
+        animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.75s forwards;
     }
 
     .my-work {
