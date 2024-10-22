@@ -150,7 +150,7 @@
         object-fit: cover;
         border-radius: .5em;
         opacity: 0;
-        animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.3s forwards;
+        animation: reveal 2.2s cubic-bezier(0.77, 0, 0.175, 1) 0.3s forwards;
     }
 
     .picture-1 {
@@ -163,7 +163,7 @@
 
     hr {
         width: 100%;
-        margin: 5em 0 2em 1;
+        margin: 1em 0;
         border: none; /* Remove default border */
         border-top: 2px solid #2E2C2C; /* Add a blue top border */
         animation: line-reveal 2s ease 2.25s forwards;
