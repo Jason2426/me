@@ -50,8 +50,6 @@
             </div>
        </section>
     </section>
-    
-
 
     <section class="my-work">
         <h2>Have a look at my work</h2>
@@ -66,6 +64,8 @@
             <img src="" alt="">
         </article>
     </section>
+
+    <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6m9qPYXmhge2QhBLfFKnVF?utm_source=generator&theme=0" width="50%" height="102" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
 
 </main>
 
@@ -173,7 +173,7 @@
     .description {
         opacity: 0;
         margin: 2em;
-        animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.75s forwards;
+        animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.85s forwards;
     }
 
     .my-work {
