@@ -69,6 +69,7 @@ table {
   --main-bg-color: #0F0F0F;
   --secondary-bg-color: #171919;
   --main-text-color: #676666; 
+  --secondary-text-color: #252525;
 
   --arvo-regular: "Arvo", system-ui;
   --arvo-bold: "Arvo-bold", system-ui;
