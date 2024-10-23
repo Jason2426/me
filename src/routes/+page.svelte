@@ -52,17 +52,14 @@
     </section>
 
     <section class="my-work">
-        <h2>Have a look at my work</h2>
-        <article>
-            <h4>
-                TouchTribe
-            </h4>
-            <span>
-                Design & Front-End
-            </span>
-            <svg><!--Arrow Btn--></svg>
-            <img src="" alt="">
-        </article>
+        <h4>My work</h4>
+        <ul>
+            <li><a href="#">DDA Vacature</a></li>
+            <li><a href="#">RedPers</a></li>
+            <li><a href="#">TouchTribe</a></li>
+            <li><a href="#">Lifely</a></li>
+            <li><a href="#">Kompas Publishing</a></li>
+        </ul>
     </section>
 
     <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6m9qPYXmhge2QhBLfFKnVF?utm_source=generator&theme=0" width="50%" height="102" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
@@ -177,7 +174,20 @@
     }
 
     .my-work {
-        display: none;
+        color: var(--secondary-text-color);
+    }
+
+    ul {
+        font-size: calc(var(--heading-sm) - 0.4em);
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover {
+        color: white;
+        transition: .25s;
     }
 
     @media (min-width: 545px){
