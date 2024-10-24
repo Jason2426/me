@@ -34,20 +34,19 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 3em 1.75em 0 1.75em;
+        margin: 5em 1.75em 0 1.75em;
         color: var(--secondary-text-color);
     }
 
     .my-work h4 {
+        font-family: var(--arvo-italic-bold);
         margin-bottom: 1.5em;
     }
 
     ul {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: .75em;
-        font-size: calc(var(--heading-sm) - 1.5em);
+        font-size: calc(var(--heading-sm) - .4em);
     }
 </style>
