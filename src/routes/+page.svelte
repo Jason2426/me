@@ -18,6 +18,7 @@
         { label : "RedPers", href : "/", className : "?" },
         { label : "Lifely", href : "/", className : "?" },
         { label : "Kompas Publishing", href : "/", className : "?" },
+        { label : "CrossMarX", href : "/", className : "?" },
     ];
 </script>
 
@@ -80,12 +81,6 @@
 </main>
 
 <style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        transition: .20ns;
-    }
 
     .intro-section {
         display: flex;
@@ -190,8 +185,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 1.75em;
+        margin: 3em 1.75em 0 1.75em;
         color: var(--secondary-text-color);
+    }
+
+    .my-work h4 {
+        margin-bottom: 1.5em;
     }
 
     ul {

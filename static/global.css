@@ -28,6 +28,12 @@ body {
   color: #FFFFFF;
   font-family: var(--arvo-regular);
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: .20ns;
+}
 ol, ul {
 	list-style: none;
 }
