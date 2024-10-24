@@ -50,7 +50,7 @@
 
     @media (min-width: 820px){
         .my-projects-section {
-            margin: 12em 3em 0 3em;
+            margin: 16.5em 3em 0 3em;
             flex-direction: row;
             justify-content: space-between;
             align-content: center;
