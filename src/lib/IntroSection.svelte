@@ -34,7 +34,7 @@
             </span>
         </h4>
     </div>
-    <section class="container-section">
+    <section class="sub-section">
         <div class="images-of-me">
             <div class="picture-1">
                 <img src="./young_me.jpeg" alt="Small liliputter">
@@ -105,7 +105,7 @@
         display: none;
     }
 
-    .container-section {
+    .sub-section {
         display: flex;
         flex-direction: column;
     }
@@ -179,7 +179,7 @@
         hr {
             display: none;
         }
-        .container-section {
+        .sub-section {
             flex-direction: row;
             justify-content: space-between;
         }
