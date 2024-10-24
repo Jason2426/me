@@ -1,11 +1,11 @@
 <script>
 
-export let label, className, href;
+export let label, href;
 </script>
 
 <a
     href={href}
-    class={className}>
+    >
     {label}
 </a>
 

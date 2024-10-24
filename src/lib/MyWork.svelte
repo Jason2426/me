@@ -3,12 +3,12 @@
     import Link from "$lib/Link.svelte";
 
     const projects = [
-        { label : "DDA Vacature", href : "/", className : "?" },
-        { label : "TouchTribe", href : "/", className : "?" },
-        { label : "RedPers", href : "/", className : "?" },
-        { label : "Lifely", href : "/", className : "?" },
-        { label : "Kompas Publishing", href : "/", className : "?" },
-        { label : "CrossMarX", href : "/", className : "?" },
+        { label : "DDA Vacature", href : "/"},
+        { label : "TouchTribe", href : "/"},
+        { label : "RedPers", href : "/"},
+        { label : "Lifely", href : "/"},
+        { label : "Kompas Publishing", href : "/"},
+        { label : "CrossMarX", href : "/"},
     ];
 
 </script>
@@ -20,7 +20,6 @@
             <li>
                 <Link
                     href={project.href}
-                    class={project.className}
                     label={project.label}
                 />
             </li>
@@ -33,7 +32,6 @@
     .my-work {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin: 5em 1.75em 0 1.75em;
         color: var(--secondary-text-color);
     }
@@ -48,5 +46,22 @@
         flex-direction: column;
         gap: .75em;
         font-size: calc(var(--heading-sm) - .4em);
+    }
+
+    @media (min-width: 820px){
+        .my-work {
+            margin: 12em 3em 0 3em;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .my-work h4 {
+            font-size: 34px;
+        }
+
+        ul {
+            align-items: self-end;
+            font-size: calc(var(--heading-md) + .5em);
+        }
     }
 </style>
