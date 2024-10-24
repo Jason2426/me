@@ -53,6 +53,7 @@
             margin: 12em 3em 0 3em;
             flex-direction: row;
             justify-content: space-between;
+            align-content: center;
         }
 
         .my-work h4 {
@@ -61,7 +62,8 @@
 
         ul {
             align-items: self-end;
-            font-size: calc(var(--heading-md) + .5em);
+            font-size: calc(var(--heading-md) + .1em);
+            gap: .6em;
         }
     }
 </style>
