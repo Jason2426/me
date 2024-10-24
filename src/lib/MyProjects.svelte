@@ -13,7 +13,7 @@
 
 </script>
 
-<section class="my-work">
+<section class="my-projects-section">
     <h4>My work</h4>
     <ul>
         {#each projects as project}
@@ -29,14 +29,14 @@
 
 <style>
     
-    .my-work {
+    .my-projects-section {
         display: flex;
         flex-direction: column;
         margin: 5em 1.75em 0 1.75em;
         color: var(--secondary-text-color);
     }
 
-    .my-work h4 {
+    .my-projects-section h4 {
         font-family: var(--arvo-italic-bold);
         margin-bottom: 1.5em;
     }
@@ -49,15 +49,15 @@
     }
 
     @media (min-width: 820px){
-        .my-work {
+        .my-projects-section {
             margin: 12em 3em 0 3em;
             flex-direction: row;
             justify-content: space-between;
             align-content: center;
         }
 
-        .my-work h4 {
-            font-size: 34px;
+        .my-projects-section h4 {
+            font-size: 42px;
         }
 
         ul {
