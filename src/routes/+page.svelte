@@ -1,5 +1,6 @@
 <script>
     import { time } from "$lib/stores.js";
+    import Link from "$lib/Link.svelte";
 
     const formatter = new Intl.DateTimeFormat(
         "en",
@@ -10,6 +11,14 @@
             second: "2-digit"
         }
     );
+
+    const projects = [
+        { label : "DDA Vacature", href : "/", className : "?" },
+        { label : "TouchTribe", href : "/", className : "?" },
+        { label : "RedPers", href : "/", className : "?" },
+        { label : "Lifely", href : "/", className : "?" },
+        { label : "Kompas Publishing", href : "/", className : "?" },
+    ];
 </script>
 
 <main>
@@ -54,11 +63,15 @@
     <section class="my-work">
         <h4>My work</h4>
         <ul>
-            <li><a href="/">DDA Vacature</a></li>
-            <li><a href="/">RedPers</a></li>
-            <li><a href="/">TouchTribe</a></li>
-            <li><a href="/">Lifely</a></li>
-            <li><a href="/">Kompas Publishing</a></li>
+            {#each projects as project}
+                <li>
+                    <Link
+                        href={project.href}
+                        class={project.className}
+                        label={project.label}
+                    />
+                </li>
+            {/each}
         </ul>
     </section>
 
@@ -188,18 +201,6 @@
         align-items: center;
         gap: .75em;
         font-size: calc(var(--heading-sm) - 1.5em);
-    }
-    li {
-        
-    }
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    a:hover {
-        color: white;
-        transition: .25s;
     }
 
     @media (min-width: 545px){
