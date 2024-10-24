@@ -54,11 +54,11 @@
     <section class="my-work">
         <h4>My work</h4>
         <ul>
-            <li><a href="#">DDA Vacature</a></li>
-            <li><a href="#">RedPers</a></li>
-            <li><a href="#">TouchTribe</a></li>
-            <li><a href="#">Lifely</a></li>
-            <li><a href="#">Kompas Publishing</a></li>
+            <li><a href="/">DDA Vacature</a></li>
+            <li><a href="/">RedPers</a></li>
+            <li><a href="/">TouchTribe</a></li>
+            <li><a href="/">Lifely</a></li>
+            <li><a href="/">Kompas Publishing</a></li>
         </ul>
     </section>
 
@@ -174,11 +174,23 @@
     }
 
     .my-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1.75em;
         color: var(--secondary-text-color);
     }
 
     ul {
-        font-size: calc(var(--heading-sm) - 0.4em);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .75em;
+        font-size: calc(var(--heading-sm) - 1.5em);
+    }
+    li {
+        
     }
     a {
         text-decoration: none;
