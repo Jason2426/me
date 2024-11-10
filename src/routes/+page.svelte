@@ -1,7 +1,6 @@
 <script>
 
     import IntroSection from "$lib/IntroSection.svelte";
-    import MyProjects from "$lib/MyProjects.svelte";
 
 </script>
 
