@@ -148,7 +148,7 @@
 
     .description {
         opacity: 0;
-        margin: 2em;
+        margin: 1.5em;
         animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.85s forwards;
     }
 
