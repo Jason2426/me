@@ -3,7 +3,9 @@
 
     const projects = [
         { name: "DDA Vacature", type: "FDND Project", imgSrc: "./test.png", href: "" },
-        { name: "TouchTribe", type: "FDND Project", imgSrc: "./test.png", href: "" }
+        { name: "TouchTribe", type: "FDND Project", imgSrc: "./test.png", href: "" },
+        { name: "RedPers", type: "FDND Project", imgSrc: "./test.png", href: "" },
+        { name: "Kompas", type: "Personal Project", imgSrc: "./test.png", href: "" },
     ];
 </script>
 
@@ -27,17 +29,41 @@
     .my-work{
         display: flex;
         flex-direction: column;
-        margin: 5em 1.5em 0 1.5em;
+        margin: 7.5em 1.5em 0 1.5em;
     }
 
     .intro-text {
-        color: #4D4D4D;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #3b3b3b;
+        width: 100%;
+    }
+
+    .intro-text p{
+        max-width: 100%;
     }
 
     .projects {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 1.5em;
         margin-top: 3em;
     }
+
+    @media(min-width: 720px){
+        .projects{
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        }
+    }
+
+    @media(min-width: 1120px){
+        .projects{
+            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        }
+    }
+
+
 </style>

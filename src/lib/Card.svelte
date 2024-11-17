@@ -19,26 +19,41 @@
         text-decoration: none;
         color: #303030;
     }
+    
     article {
         display: flex;
         flex-direction: column;
         background-color: #181818;
         border-radius: .25em;
     }
-    .main-img{
-        margin: 4em 2.5em 2em 2.5em;
+
+    .main-img {
+        margin: 4em 3.5em 2em 3.5em;
     }
+
     img {
         max-width: 100%;
         object-fit: cover;
         border-radius: .25em;
     }
+
     .meta-info {
         display: flex;
         justify-content: space-between;
-        font-size: 12px;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 1.5em;
     }
+
+    .meta-info p {
+        color: #363636;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1em;
+        margin: 1em;
+    }
+
+    @media(min-width: 1120px){
+        .main-img{
+            margin: 5em 6em 4em 6em;
+        }
+    }
+
 </style>
