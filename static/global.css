@@ -32,7 +32,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: .20ns;
+  transition: .20s;
 }
 ol, ul {
 	list-style: none;
