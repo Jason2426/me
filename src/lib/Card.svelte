@@ -23,7 +23,7 @@
     article {
         display: flex;
         flex-direction: column;
-        background-color: #181818;
+        background-color: #141414;
         border-radius: .25em;
     }
 
