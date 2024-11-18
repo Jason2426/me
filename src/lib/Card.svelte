@@ -28,7 +28,7 @@
     }
 
     .main-img {
-        margin: 4em 3.5em 2em 3.5em;
+        margin: 4em 3em 2em 3em;
     }
 
     img {
@@ -52,7 +52,7 @@
 
     @media(min-width: 1120px){
         .main-img{
-            margin: 5em 6em 4em 6em;
+            margin: 4em 5em 4em 5em;
         }
     }
 

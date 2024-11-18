@@ -6,6 +6,10 @@
         { name: "TouchTribe", type: "FDND Project", imgSrc: "./test.png", href: "" },
         { name: "RedPers", type: "FDND Project", imgSrc: "./test.png", href: "" },
         { name: "Kompas", type: "Personal Project", imgSrc: "./test.png", href: "" },
+        { name: "Kompas", type: "Personal Project", imgSrc: "./test.png", href: "" },
+        { name: "Kompas", type: "Personal Project", imgSrc: "./test.png", href: "" },
+        { name: "Kompas", type: "Personal Project", imgSrc: "./test.png", href: "" },
+        { name: "Kompas", type: "Personal Project", imgSrc: "./test.png", href: "" },
     ];
 </script>
 
@@ -54,16 +58,26 @@
     }
 
     @media(min-width: 720px){
+
+    .intro-text p{
+        font-size: 1em;
+        max-width: 75%;
+    }
         .projects{
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         }
     }
 
     @media(min-width: 1120px){
-        .projects{
-            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-        }
+        .intro-text p{
+             max-width: 37.5%;
+    }
     }
 
+    @media(min-width: 1320px){
+        .projects{
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        }
+    }
 
 </style>
