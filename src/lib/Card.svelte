@@ -27,6 +27,11 @@
         border-radius: .25em;
     }
 
+    article:hover .main-img {
+        transition: .25s;
+        transform: translateY(-.5em);
+    }
+
     .main-img {
         margin: 4em 3em 2em 3em;
     }
